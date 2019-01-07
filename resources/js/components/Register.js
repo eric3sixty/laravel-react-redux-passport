@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
+import { registerUser } from '../actions/authActions';
 
 class Register extends Component {
     constructor(props) {
@@ -14,9 +17,7 @@ class Register extends Component {
     }
 
     onChange(e) {
-        this.setState({
-            [e.target.name]: e.target.value,
-        });
+        this.setState({ [e.target.name]: e.target.value });
     }
 
     onSubmit(e) {
@@ -27,7 +28,7 @@ class Register extends Component {
             password: this.state.password,
             password_confirmation: this.state.password_confirmation,
         };
-        console.log(data);
+        this.props.registerUser(data, this.props.history);
     }
 
     render() {
@@ -96,4 +97,7 @@ class Register extends Component {
     }
 }
 
-export default Register;
+export default connect(
+    null,
+    { registerUser },
+)(withRouter(Register));
