@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { registerUser } from '../actions/authActions';
 
 class Register extends Component {
@@ -10,7 +11,7 @@ class Register extends Component {
             name: '',
             email: '',
             password: '',
-            password_confirmation: '',
+            password_confirmation: ''
         };
         this.onChange = this.onChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
@@ -26,7 +27,7 @@ class Register extends Component {
             name: this.state.name,
             email: this.state.email,
             password: this.state.password,
-            password_confirmation: this.state.password_confirmation,
+            password_confirmation: this.state.password_confirmation
         };
         this.props.registerUser(data, this.props.history);
     }
@@ -97,7 +98,11 @@ class Register extends Component {
     }
 }
 
+Register.propTypes = {
+    registerUser: PropTypes.func.isRequired
+};
+
 export default connect(
     null,
-    { registerUser },
+    { registerUser }
 )(withRouter(Register));
