@@ -67192,8 +67192,8 @@ var setAuthToken = function setAuthToken(token) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /var/www/html/laravel-passport/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /var/www/html/laravel-passport/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\viktor.labroski\Documents\passport-laravel\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\viktor.labroski\Documents\passport-laravel\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
