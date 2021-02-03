@@ -10,27 +10,29 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
-        "@babel/preset-react": "^7.0.0",
-        "axios": "^0.18",
+        "@babel/preset-react": "^7.12.10",
+        "axios": "^0.18.1",
         "babel-preset-react": "^6.23.0",
-        "bootstrap": ">=4.3.1",
-        "cross-env": "^5.1",
-        "jquery": "^3.2",
-        "laravel-mix": "^4.0.7",
-        "lodash": "^4.17.5",
-        "popper.js": "^1.12",
-        "react": "^16.2.0",
-        "react-dom": "^16.2.0",
-        "resolve-url-loader": "^2.3.1",
-        "sass": "^1.15.2",
-        "sass-loader": "^7.1.0"
+        "bootstrap": "^4.6.0",
+        "cross-env": "^5.2.1",
+        "jquery": "^3.5.1",
+        "laravel-mix": "^4.1.4",
+        "lodash": "^4.17.20",
+        "popper.js": "^1.16.1",
+        "react": "^16.14.0",
+        "react-dom": "^16.14.0",
+        "resolve-url-loader": "^2.3.2",
+        "sass": "^1.32.6",
+        "sass-loader": "^7.3.1"
     },
     "dependencies": {
+        "@material-ui/core": "^4.11.3",
+        "@material-ui/icons": "^4.11.2",
         "classnames": "^2.2.6",
         "jwt-decode": "^2.2.0",
-        "react-redux": "^6.0.0",
+        "react-redux": "^6.0.1",
         "react-router-dom": "^4.3.1",
-        "redux": "^4.0.1",
+        "redux": "^4.0.5",
         "redux-thunk": "^2.3.0"
     }
 }

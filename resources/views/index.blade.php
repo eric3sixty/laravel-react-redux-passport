@@ -6,7 +6,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Integrated Financial Management Information System</title>
     <link href="/css/app.css" rel="stylesheet" type="text/css"><link>
 </head>
 <body>
